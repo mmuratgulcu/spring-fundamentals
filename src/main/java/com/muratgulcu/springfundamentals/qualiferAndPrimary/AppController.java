@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class AppController {
 
     @Autowired
-    @Qualifier("numericFormatter")
+    @CustomQualifier("numericFormatter")
     private Formatter formatter;
 }
