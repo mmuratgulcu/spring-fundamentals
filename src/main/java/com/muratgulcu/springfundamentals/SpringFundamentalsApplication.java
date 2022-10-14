@@ -49,7 +49,7 @@ public class SpringFundamentalsApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		int beanDefinitionCount = applicationContext.getBeanDefinitionCount();
+		/*int beanDefinitionCount = applicationContext.getBeanDefinitionCount();
 		System.out.println("Bean sayısı : " + beanDefinitionCount);
 
 		Object singletonBean = applicationContext.getBean("singletonBean");
@@ -72,8 +72,7 @@ public class SpringFundamentalsApplication implements CommandLineRunner {
 		prototypeBean = applicationContext.getBean("prototypeBean");
 		System.out.println(prototypeBean);
 
-
-		/*String name = environment.getProperty("name2");
+		String name = environment.getProperty("name2");
 		String surname = environment.getProperty("surname2");
 
 		System.out.println(name + " - " + surname);
